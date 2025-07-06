@@ -1,8 +1,11 @@
 import express from "express";
 import { configDotenv } from "dotenv";
+import connectDB from "./database/db.js";
 
 // Load .env file
 configDotenv();
+// connect database
+connectDB();
 
 const app = express();
 
