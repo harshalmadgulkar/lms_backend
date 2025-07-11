@@ -3,19 +3,19 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema(
 	{
 		name: {
-			type: string,
+			type: String,
 			required: true,
 		},
 		email: {
-			type: string,
+			type: String,
 			required: true,
 		},
 		password: {
-			type: string,
+			type: String,
 			required: true,
 		},
 		role: {
-			type: string,
+			type: String,
 			enum: ["instructor", "student"],
 			default: "student",
 		},
@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
 			},
 		],
 		photoUrl: {
-			type: string,
+			type: String,
 			default: "",
 		},
 	},
